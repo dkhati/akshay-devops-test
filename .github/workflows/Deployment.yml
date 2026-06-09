@@ -19,4 +19,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: cd /home/ubuntu/akshay/akshay-devops-test && git pull origin master && npm install && npm run build && pm2 restart all
+          script: source ~/.bashrc && cd /home/ubuntu/akshay/akshay-devops-test && git pull origin master && npm install && npm run build && pm2 restart all
